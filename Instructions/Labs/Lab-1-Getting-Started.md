@@ -40,145 +40,93 @@ Your manager has emphasized that speed to market is crucial in the competitive f
 
 Let's get started and grow some ripe code together! 🍊
 
-## Logging into the Lab Environment
+## Setting Up Your Development Environment
 
-### Accessing Your Lab Environment
+### Cloning the Repository
 
-Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
+To get started with this hands-on lab, you'll need to clone the repository to your local machine.
 
-   ![](../../media/guide.png)
-
-#### Virtual Machine & Lab Guide
-
-Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
-
-### Exploring Your Lab Resources
-
-To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
-
-   ![Manage Your Virtual Machine](../../media/exp-lab-resources.png)
-
-### Utilizing the Split Window Feature
-
-For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
-
-![Use the Split Window Feature](../../media/split-window.png)
-
-### Managing Your Virtual Machine
-
-Feel free to **Start**, **Stop**, or **Restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
-
-![Manage Your Virtual Machine](../../media/23-7-25-g-2.png)
-
-### Utilizing the Zoom In/Out Feature
-
-To adjust the zoom level for the environment page, click the A↕: 100% icon located next to the timer in the lab environment.
-
-![Use the Split Window Feature](../../media/zoom.png)
-
-### Login to GitHub
-
-1. In the LABVM desktop, open the **Microsoft Edge** browser.
-
-   ![](../../media/23-7-25-g-1.png)
-
-1. In a new tab, navigate to the **GitHub login** page by copying and pasting the following URL into the address bar:
+1. Navigate to the **IA-devin-lab** repository in a web browser:
 
    ```
-   https://github.com/login
+   https://github.com/salomaocalheiros/IA-devin-lab
    ```
 
-1. On the **Sign in to GitHub** tab, enter the provided **GitHub username** **(1)** in the input field, and click on **Sign in with your identity provider** to continue **(2)**.
+2. Click the green **Use this template** button to create your own copy, or **Fork** the repository if you want to contribute.
 
-    - Email/Username: <inject key="GitHub User Name" enableCopy="true"/>
+3. Clone the repository to your local machine:
 
-      ![](../../media/23-7-25-g1.png)
-
-1. Click on **Continue** on the **Single sign-on to CloudLabs Organizations** page to proceed.
-
-    ![](../../media/23-7-25-g2.png)
-
-1. You'll see the **Sign in** tab. Here, enter your Azure Entra credentials:
-
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-
-       ![Enter Your Username](../../media/23-7-25-g3.png)
-
-1. Next, provide your password and click on **Sign in**
-
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
-
-      ![Enter Your Password](../../media/23-7-25-g4.png)
-
-1. On the **Stay Signed in?** pop-up, click on No.
-
-    ![](../../media/23-7-25-g4.1.png)
-
-1. You are now successfully logged in to **GitHub** and have been redirected to the **GitHub homepage**.
-
-   ![](../../media/github-homepage01.png)
-
-## Creating your Repository
-
-1. Navigate to the **hol-copilot-lab** repository in a web browser.
-
-   ```
-   https://github.com/Coveros/hol-copilot-lab/tree/main
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/IA-devin-lab.git
+   cd IA-devin-lab
    ```
 
-1. Click the green **Use this template** button.
+### Prerequisites
 
-   ![](../../media/use-this-template-button.png)
+Before starting the lab, ensure you have the following installed:
+- **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
+- **Git** - [Download here](https://git-scm.com/)
+- **Visual Studio Code** or your preferred code editor
+- **Devin CLI** - Follow the installation instructions from the official Devin documentation
 
-1. You should see a repository creation form. Make the following selections and then click the **Create repository** button.
-   - **Include all branches:** On
-   - **Owner:** Cloudlabs-Enterprises
-   - **Repository name:** <inject key="GitHub User Name" enableCopy="true"/>
-   - **Visibility:** Internal
+### Installing Dependencies
 
-1. After a few moments you should be taken to the home page of your newly-created repository.
+1. Navigate to the application directory:
 
-   ![](../../media/new-repo-home-page.png)
+   ```bash
+   cd eCommApp
+   ```
 
-## Setting up IDE
+2. Install the project dependencies:
 
-1. Double-click on the Visual Studio Code shortcut on the desktop of your virtual environment.
+   ```bash
+   npm install
+   ```
 
-   ![](../../media/visual-studio-code-shortcut.png)
+3. Verify the installation by running the development server:
 
-1. Once the IDE opens, click on the **Welcome** link.
+   ```bash
+   npm run dev
+   ```
 
-   ![](../../media/link-to-return-to-welcome-screen.png)
+4. Open your browser and navigate to `http://localhost:3000` to see the application running.
 
-1. Click on the "Clone Git Repository..." option and select **Clone from GitHub** when that option appears at the top of the IDE. Follow the steps for signing into GitHub.
+## Setting Up Devin
 
-   ![](../../media/clone-git-repo-vs-code.png)
+1. **Install Devin CLI**: Follow the official installation instructions for your operating system from the Devin documentation.
 
-1. In Visual Studio Code, type the name of the repository that you just created in the search bar at the top of the IDE.
+2. **Verify Installation**: Open your terminal and run:
 
-1. Choose a location on the local filesystem to save the repo. If prompted, sign into GitHub in the browser and authorize the Git Credential Manager, confirm that you want to open the repository in your current VS Code window, and indicate that you trust the author of the files in the folder.
+   ```bash
+   devin --help
+   ```
 
-1. Install the Devin CLI extension for Visual Studio Code (if available) or ensure you have the Devin CLI installed on your system. You can also use Devin directly from the terminal.
+   You should see the Devin CLI help output, confirming the installation was successful.
 
-   ![](../../media/install-github-copilot-extension.png)
+3. **Configure Devin**: If required, configure Devin with your API keys or authentication credentials following the official documentation.
 
-1. Verify that you can access Devin by running `devin --help` in the terminal or checking for the Devin interface in your IDE.
+4. **Test Devin**: Try a simple command to ensure Devin is working properly:
 
-   ![](../../media/evidence-that-copilot-extension-was-installed.png)
+   ```bash
+   devin "Hello, can you help me with coding?"
+   ```
 
-## Support Contact
+## Optional: IDE Integration
 
-The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
+If you prefer using Devin within your IDE:
+- **Visual Studio Code**: Install the Devin extension (if available) from the VS Code Marketplace
+- **Other Editors**: Check the Devin documentation for available integrations
 
-Learner Support Contacts:
+## Getting Help
 
-- Email Support: cloudlabs-support@spektrasystems.com
-- Live Chat Support: https://cloudlabs.ai/labs-support
+If you encounter any issues during this lab:
+- Check the [Devin documentation](https://devin.ai) for troubleshooting guides
+- Review the project README for specific setup instructions
+- Search for similar issues in the project's GitHub Issues section
+- Consult the official documentation for React, TypeScript, and other technologies used
 
 ## Summary
 
-In this lab, you successfully set up your development environment, logged into GitHub, created a new repository, and configured your environment with Devin.
+In this lab, you successfully set up your development environment, cloned the repository, installed dependencies, and configured Devin for the hands-on exercises.
 
-#### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
-
-![](../../media/next-page.png)
+#### You have successfully completed the lab. Proceed to **Lab 2 - Understanding Project** to continue.
