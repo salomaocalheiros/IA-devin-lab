@@ -67,7 +67,8 @@ Before starting the lab, ensure you have the following installed:
 - **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
 - **Git** - [Download here](https://git-scm.com/)
 - **Visual Studio Code** or your preferred code editor
-- **Devin CLI** - Follow the installation instructions from the official Devin documentation
+- **Homebrew** (for macOS) - [Download here](https://brew.sh/)
+- **curl** (for WSL/Linux) - Usually pre-installed, or install via package manager
 
 ### Installing Dependencies
 
@@ -93,9 +94,27 @@ Before starting the lab, ensure you have the following installed:
 
 ## Setting Up Devin
 
-1. **Install Devin CLI**: Follow the official installation instructions for your operating system from the Devin documentation.
+### Installing Devin CLI
 
-2. **Verify Installation**: Open your terminal and run:
+1. **Visit the official Devin CLI documentation**: https://docs.devin.ai/cli
+
+2. **Choose your installation method** based on your operating system:
+
+   **For WSL/Linux:**
+   ```bash
+   curl -fsSL https://cli.devin.ai/install.sh | bash
+   ```
+
+   **For macOS:**
+   ```bash
+   brew install --cask devin-cli
+   ```
+
+   **For Windows:**
+   - Use WSL and follow the Linux instructions above
+   - Or check the official documentation for Windows-specific installation
+
+3. **Verify Installation**: Open your terminal and run:
 
    ```bash
    devin --help
@@ -103,9 +122,9 @@ Before starting the lab, ensure you have the following installed:
 
    You should see the Devin CLI help output, confirming the installation was successful.
 
-3. **Configure Devin**: If required, configure Devin with your API keys or authentication credentials following the official documentation.
+4. **Configure Devin**: If required, configure Devin with your API keys or authentication credentials following the official documentation at https://docs.devin.ai/cli
 
-4. **Test Devin**: Try a simple command to ensure Devin is working properly:
+5. **Test Devin**: Try a simple command to ensure Devin is working properly:
 
    ```bash
    devin "Hello, can you help me with coding?"
@@ -114,8 +133,22 @@ Before starting the lab, ensure you have the following installed:
 ## Optional: IDE Integration
 
 If you prefer using Devin within your IDE:
-- **Visual Studio Code**: Install the Devin extension (if available) from the VS Code Marketplace
-- **Other Editors**: Check the Devin documentation for available integrations
+
+### Visual Studio Code
+Install the **Devin-Cli Chat for VS Code** extension from the VS Code Marketplace:
+1. Open VS Code
+2. Go to the Extensions view (Ctrl+Shift+X)
+3. Search for "Devin-Cli Chat for VS Code"
+4. Click Install
+
+This extension provides a chat interface within VS Code that integrates with the Devin CLI.
+
+### Other Extensions
+You may also find other Devin-related extensions in the VS Code Marketplace such as:
+- **Devin Sessions - AI Coding Assistant**
+- **Devin for VS Code**
+
+Choose the extension that best fits your workflow.
 
 ## Getting Help
 
