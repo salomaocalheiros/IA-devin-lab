@@ -4,18 +4,18 @@
 
 ## Overall Lab Objectives
 
-This 4-hour hands-on lab is designed to give developers practical experience using **GitHub Copilot** as an AI-powered assistant throughout the Software Development Life Cycle (SDLC). You will explore how GitHub Copilot can improve developer productivity, code quality, and security—from feature planning and prototyping to implementation, code review, and remediation.
+This 4-hour hands-on lab is designed to give developers practical experience using **Devin** as an AI-powered assistant throughout the Software Development Life Cycle (SDLC). You will explore how Devin can improve developer productivity, code quality, and security—from feature planning and prototyping to implementation, code review, and remediation.
 
 Through a series of guided, real-world exercises, you will learn how to:
-- Understand GitHub Copilot’s role across all phases of the SDLC
-- Plan new features and define success criteria with GitHub Copilot
-- Use AI-powered code completions directly within the IDE
-- Leverage GitHub Copilot Chat in Ask, Edit, and Agent modes
-- Delegate tasks to the GitHub Copilot coding agent to multiply development impact
-- Review code at scale using GitHub Copilot code reviews
-- Detect and fix security vulnerabilities using GitHub Copilot Autofix
-- Extend GitHub Copilot’s capabilities with Model Context Protocol (MCP) servers
-- Optimize GitHub Copilot performance using Custom Instructions and Prompt Files
+- Understand Devin's role across all phases of the SDLC
+- Plan new features and define success criteria with Devin
+- Use AI-powered code completions and editing via command line
+- Leverage Devin's different modes (Normal and Plan) for different development tasks
+- Delegate tasks to Devin subagents to multiply development impact
+- Review code at scale using Devin's analysis capabilities
+- Detect and fix security vulnerabilities using Devin
+- Extend Devin's capabilities with Model Context Protocol (MCP) servers
+- Optimize Devin performance using custom skills and configuration
 
 ## Welcome to The Daily Harvest
 
@@ -25,7 +25,7 @@ Congratulations! You've just been hired as a software developer at **The Daily H
 
 ### Your Role
 
-As a new developer on the team, you'll be working on extending the functionality of the website and ensuring that it is well-tested. The company has recently adopted **GitHub Copilot** as part of its development workflow, and you'll be learning how to leverage this AI-powered assistant to accelerate your productivity and code quality.
+As a new developer on the team, you'll be working on extending the functionality of the website and ensuring that it is well-tested. The company has recently adopted **Devin** as part of its development workflow, and you'll be learning how to leverage this AI-powered assistant to accelerate your productivity and code quality.
 
 ### The Challenge Ahead
 
@@ -36,20 +36,20 @@ Throughout this lab, you'll help The Daily Harvest tackle real development chall
 - Maintaining high code quality standards across the development team
 - Identifying and resolving security vulnerabilities
 
-Your manager has emphasized that speed to market is crucial in the competitive fruit-selling space, but code quality and security cannot be compromised. This is where GitHub Copilot becomes your secret weapon—helping you write better code faster while maintaining the high standards that fruit lovers expect from The Daily Harvest.
+Your manager has emphasized that speed to market is crucial in the competitive fruit-selling space, but code quality and security cannot be compromised. This is where Devin becomes your secret weapon—helping you write better code faster while maintaining the high standards that fruit lovers expect from The Daily Harvest.
 
 Let's get started and grow some ripe code together! 🍊
 
 ## Logging into the Lab Environment
 
 ### Accessing Your Lab Environment
- 
+
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
-   
+
    ![](../../media/guide.png)
 
 #### Virtual Machine & Lab Guide
- 
+
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
 
 ### Exploring Your Lab Resources
@@ -158,11 +158,11 @@ To adjust the zoom level for the environment page, click the A↕: 100% icon loc
 
 1. Choose a location on the local filesystem to save the repo. If prompted, sign into GitHub in the browser and authorize the Git Credential Manager, confirm that you want to open the repository in your current VS Code window, and indicate that you trust the author of the files in the folder.
 
-1. Click on the **Extensions** button on the left-hand banner and search for **GitHub Copilot**. Install the extension.
+1. Install the Devin CLI extension for Visual Studio Code (if available) or ensure you have the Devin CLI installed on your system. You can also use Devin directly from the terminal.
 
    ![](../../media/install-github-copilot-extension.png)
 
-1. Verify that the Copilot chat window appears on the right-hand side of the IDE.
+1. Verify that you can access Devin by running `devin --help` in the terminal or checking for the Devin interface in your IDE.
 
    ![](../../media/evidence-that-copilot-extension-was-installed.png)
 
@@ -177,7 +177,7 @@ Learner Support Contacts:
 
 ## Summary
 
-In this lab, you successfully set up your development environment, logged into GitHub, created a new repository, and configured Visual Studio Code with GitHub Copilot. 
+In this lab, you successfully set up your development environment, logged into GitHub, created a new repository, and configured your environment with Devin.
 
 #### You have successfully completed the lab. Click on **Next >>** to continue to the next lab.
 

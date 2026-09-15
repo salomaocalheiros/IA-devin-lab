@@ -1,129 +1,85 @@
-# GitHub Copilot Administration and Metrics
+# Devin Administration and Metrics
 
 ## 🎯 Learning Objectives
 
 By the end of this exercise, you will understand:
-- How GitHub Copilot is administered at the enterprise level
-- Metrics and analytics available for measuring GitHub Copilot adoption and impact
-- How to measure ROI and developer productivity improvements
+- How Devin is administered at the team and organizational level
+- Metrics and analytics available for measuring Devin adoption and impact
+- How to measure ROI and developer productivity improvements with AI assistants
 
-## 🍎 Scenario: Scaling GitHub Copilot Across The Daily Harvest
+## 🍎 Scenario: Scaling Devin Across The Daily Harvest
 
-The Daily Harvest has seen tremendous success with GitHub Copilot in your development team! The CTO is now considering rolling out GitHub Copilot across all engineering teams in the organization. As the lead developer who championed the initial adoption, you've been asked to help with the enterprise-wide rollout planning.
+The Daily Harvest has seen tremendous success with Devin in your development team! The CTO is now considering rolling out Devin across all engineering teams in the organization. As the lead developer who championed the initial adoption, you've been asked to help with the organization-wide rollout planning.
 
 Your manager wants to understand:
-- How to properly configure GitHub Copilot for enterprise use
+- How to properly configure Devin for team and organizational use
 - What governance controls are available for security and compliance
 - What metrics will help demonstrate value to executive leadership
-- How to measure the success and ROI of the GitHub Copilot investment
+- How to measure the success and ROI of the Devin investment
 
-This lab will explore the administrative and metrics capabilities that make GitHub Copilot suitable for enterprise deployment.
+This lab will explore the administrative and metrics capabilities that make Devin suitable for team and organizational deployment.
 
-## 🏢 GitHub Copilot Enterprise Administration
+## 🏢 Devin Administration
 
-### Enterprise Setup and Configuration
+### Team Setup and Configuration
 
-GitHub Copilot for Enterprise provides organizations with comprehensive administrative controls and enhanced capabilities:
+Devin provides teams with flexible administrative controls and enhanced capabilities:
 
-**Key Enterprise Features:**
-- **Organization-wide deployment**: Centralized license management and user provisioning
+**Key Team Features:**
+- **Project-level configuration**: Skills and rules can be defined at the project level for consistency
+- **User-level customization**: Individual developers can personalize their Devin experience
+- **Skills management**: Custom skills can be shared across team members
+- **MCP server configuration**: External integrations can be standardized across the team
 
-    ![](../media/organization-wide-deployment.png)
+### Project-Level Configuration
 
-- **Policy controls**: Fine-grained permissions and usage restrictions
+Devin allows you to define project-specific behaviors through:
 
-    ![](../media/policy-controls-part-1.png)
+**Skills (.devin/skills/):**
+- Create reusable behavior patterns for your team
+- Share coding standards and conventions
+- Define project-specific workflows
+- Grant tool permissions for specialized tasks
 
-    ![](../media/policy-controls-part-2.png)
+**Project Rules (.devin/rules/):**
+- Define team-wide development standards
+- Set Git workflow conventions
+- Establish code review requirements
+- Document testing and deployment procedures
 
-- **Security compliance**: Enterprise-grade data protection and audit capabilities
+**MCP Configuration:**
+- Standardize external service integrations
+- Share authentication credentials securely
+- Define available tools and their permissions
+- Maintain consistency across team environments
 
-    ![](../media/suggestions-matching-public-code.png)
+## 📊 Devin Metrics and Analytics
 
-    ![](../media/audit-log.png)
+### Usage Tracking
 
-- **Custom models**: Access to organization-specific knowledge and coding patterns
+While Devin doesn't have a built-in analytics dashboard like some enterprise AI tools, teams can track adoption and impact through:
 
-    ![](../media/copilot-models.png)
+**Manual Metrics Collection:**
+- **Session tracking**: Count how often team members use Devin
+- **Task completion time**: Measure time savings on development tasks
+- **Code quality metrics**: Track bug rates, test coverage, and code review times
+- **Developer surveys**: Gather qualitative feedback on Devin's impact
 
-- **Repository access controls**: Limit which repositories GitHub Copilot can access for context
-
-    ![](../media/content-exclusion.png)
-
-## 📊 GitHub Copilot Metrics and Analytics
-
-### Usage Analytics Dashboard
-
-The GitHub Copilot Analytics Dashboard provides comprehensive insights into adoption and usage patterns across your enterprise:
-- **IDE active users**
-
-    ![](../media/ide-active-users.png)
-
-- **Agent adoption**
-
-    ![](../media/agent-adoption.png)
-
-- **Most used chat model**
-
-    ![](../media/most-used-chat-model.png)
-
-- **IDE daily active users**
-
-    ![](../media/ide-daily-active-users.png)
-
-- **IDE weekly active users**
-
-    ![](../media/ide-weekly-active-users.png)
-
-- **Average chat requests per active user**
-
-    ![](../media/average-chat-requests-per-active-user.png)
-
-- **Requests per chat mode**
-
-    ![](../media/requests-per-chat-mode.png)
-
-- **Code completions**
-
-    ![](../media/code-completions.png)
-
-- **Code completions acceptance rate**
-
-    ![](../media/code-completions-acceptance-rate.png)
-
-- **Model usage per day**
-
-    ![](../media/model-usage-per-day.png)
-
-- **Chat model usage**
-
-    ![](../media/chat-model-usage.png)
-
-- **Model usage per chat mode**
-
-    ![](../media/model-usage-per-chat-mode.png)
-
-- **Language usage per day**
-
-    ![](../media/language-usage-per-day.png)
-
-- **Language usage**
-
-    ![](../media/language-usage.png)
-
-- **Model usage per language**
-
-    ![](../media/model-usage-per-language.png)
+**Project-Level Metrics:**
+- **Commit frequency**: Changes in development velocity
+- **Test coverage improvements**: Better testing practices with AI assistance
+- **Code review efficiency**: Faster review cycles with AI-generated code
+- **Onboarding time**: Reduced time for new developers to become productive
 
 ### Business Impact Measurement
 
 **ROI Calculation Framework:**
 
-The Daily Harvest's leadership team can evaluate GitHub Copilot's business impact through several key performance indicators:
+The Daily Harvest's leadership team can evaluate Devin's business impact through several key performance indicators:
 
 **Developer Productivity KPIs:**
 - **Feature Delivery Velocity**: Increased speed of new feature development
-- **Code Quality Improvements**: Reduced bug reports and faster issue resolution  
+- **Code Quality Improvements**: Reduced bug reports and faster issue resolution
 - **Developer Satisfaction**: Survey results showing improved developer experience
 - **Onboarding Time**: Reduced time for new developers to become productive
 
@@ -133,32 +89,54 @@ The Daily Harvest's leadership team can evaluate GitHub Copilot's business impac
 - **Training and Ramp-up Costs**: Lower costs for developer skill development
 - **Recruitment Advantage**: Improved ability to attract top talent
 
+## � Comparison with Enterprise AI Tools
+
+While Devin may not have all the enterprise features of tools like GitHub Copilot Enterprise, it offers:
+
+**Advantages:**
+- **Flexibility**: Greater customization through skills and configuration
+- **Command-line integration**: Seamless integration with existing development workflows
+- **Cost-effectiveness**: Often more affordable for smaller teams
+- **Open-source ecosystem**: Access to community-developed skills and integrations
+
+**Considerations:**
+- **Self-hosted option**: Teams can run Devin in their own environments for enhanced security
+- **Custom analytics**: Teams can build their own metrics collection using Devin's output
+- **Integration flexibility**: Easy integration with existing monitoring and analytics tools
+
 ## 🏆 Exercise Wrap-up
 
 ### 🎯 Key Concepts Covered:
-- **Enterprise Administration**: Policy management, governance, and security controls
-- **Metrics and Analytics**: Comprehensive measurement of adoption, productivity, and business impact  
-- **ROI Framework**: Methods for calculating and demonstrating return on investment
+- **Team Administration**: Skills, rules, and configuration management
+- **Metrics and Analytics**: Methods for measuring adoption, productivity, and business impact
+- **ROI Framework**: Approaches for calculating and demonstrating return on investment
 
 ### 💡 Strategic Takeaways:
 
 **For Development Leaders:**
-- GitHub Copilot provides enterprise-grade administrative controls suitable for large-scale deployment
-- Comprehensive metrics enable data-driven decisions about AI adoption and optimization
-- Proper governance and security policies ensure GitHub Copilot enhances rather than compromises organizational standards
+- Devin provides flexible administrative controls suitable for team-level deployment
+- Custom metrics enable data-driven decisions about AI adoption and optimization
+- Proper configuration and skills management ensure Devin enhances team productivity
 
 **For Business Executives:**
-- GitHub Copilot's impact can be measured and quantified across multiple business dimensions
+- Devin's impact can be measured and quantified across multiple business dimensions
 - ROI extends beyond just coding speed to include quality, satisfaction, and strategic advantages
-- Enterprise features provide the control and visibility needed for confident organizational adoption
+- Team-level features provide the control and consistency needed for confident organizational adoption
 
 **For IT and Security Teams:**
-- Robust security and compliance capabilities address enterprise risk management requirements
-- Audit trails and policy controls enable governance without limiting developer productivity
-- GitHub Copilot metrics can be used in addition to the information provided by existing business intelligence systems
+- Skills and rules configuration enables governance without limiting developer productivity
+- Project-level configuration allows for standardized practices across teams
+- Devin can be integrated with existing monitoring and analytics systems
 
 ## 🚀 Conclusion
 
-GitHub Copilot's enterprise administration and metrics capabilities make it a powerful tool for organizational transformation. By providing comprehensive visibility into adoption, productivity, and business impact, leaders can make informed decisions about AI integration while maintaining the security and governance standards required for enterprise software development.
+Devin's administration and configuration capabilities make it a powerful tool for team transformation. By providing flexible customization options and the ability to measure impact through custom metrics, leaders can make informed decisions about AI integration while maintaining the control and standards required for professional software development.
 
-The combination of powerful administrative controls, detailed analytics, and proven ROI frameworks positions GitHub Copilot as not just a developer tool, but a strategic enabler of business success in the AI-driven future of software development.
+The combination of powerful configuration options, custom skills, and proven ROI frameworks positions Devin as not just a developer tool, but a strategic enabler of business success in the AI-driven future of software development.
+
+## 📚 Additional Resources
+
+- **Devin Documentation**: Learn more about advanced configuration options
+- **Skills Development**: Create custom skills for your team's specific needs
+- **MCP Integration**: Connect Devin to your existing development tools and services
+- **Community Resources**: Explore community-developed skills and configurations
