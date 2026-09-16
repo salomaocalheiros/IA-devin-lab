@@ -24,14 +24,67 @@ As a modern developer, you'll leverage Devin to accelerate your onboarding proce
 
 Devin is an AI-powered command-line assistant that helps you understand code, generate implementations, and solve development challenges. Unlike traditional IDE-based AI assistants, Devin operates as an autonomous agent that can read files, search codebases, execute commands, and make targeted edits based on your requests.
 
+### Devin CLI Modes
+
+Devin CLI has **5 built-in permission modes** and **3 agent-modes** that control how Devin interacts with your system:
+
+#### Permission Modes
+
+**Normal** (Default)
+- Auto-approves read-only tools within the current directory
+- Asks for permission for write/execute operations
+- Use: `/normal` or `/mode normal`
+
+**Accept Edits**
+- Auto-approves file edits within the workspace
+- Still prompts for other operations like shell commands
+
+**Smart**
+- Auto-approves file edits like Accept Edits
+- Uses a fast model to decide if other actions are safe to run without asking
+- Still prompts for anything not clearly safe
+- High-risk categories (package installs, git mutations, rm, sudo, destructive cloud operations, sensitive files) always prompt
+- Use: `/smart` or `/mode smart`
+- Can also start in smart mode: `devin --permission-mode smart`
+
+**Bypass**
+- Auto-approves all operations including shell commands
+- Unrestricted file writes and network access
+- Use when you trust the agent with your whole machine
+- Use: `/bypass` or `/mode bypass`
+
+**Autonomous**
+- Requires `--sandbox` (only available in sandbox sessions)
+- Auto-approves shell commands, but contained by the sandbox
+- File writes still prompt (granting a scope expands the sandbox)
+- Network access filtered by sandbox domain allow/deny lists
+- Ideal for unattended execution with OS-enforced limits
+- Use: `/autonomous` or `/mode autonomous`
+
+#### Agent Modes
+
+**Normal** (Default)
+- Full access to all tools for comprehensive development tasks
+
+**Plan**
+- Read-only mode for exploration and planning
+- Use: `/plan` or `/mode plan`
+- Perfect for understanding code without making changes
+
+**Ask**
+- Question-answering mode focused on explanations
+- Use: `/ask` or `/mode ask`
+- Ideal for learning and clarification
+
 ### How Devin Works:
 - **Command-line interface**: Interact with Devin through natural language prompts in your terminal
 - **Autonomous operation**: Devin can perform multiple steps to accomplish your requests
 - **Context awareness**: Devin maintains awareness of your project structure and dependencies
 - **Multi-modal capabilities**: Devin can read files, search code, run commands, and edit code
+- **Flexible permissions**: Choose the right mode for your safety and workflow needs
 
 For exploring an unfamiliar codebase, Devin is ideal because it allows you to:
-- Query specific files or code patterns without making changes
+- Query specific files or code patterns without making changes (use `/plan` mode)
 - Get high-level explanations of project structure and purpose
 - Understand dependencies, build processes, and testing strategies
 - Ask follow-up questions to deepen your understanding
