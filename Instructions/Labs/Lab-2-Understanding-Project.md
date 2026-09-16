@@ -26,7 +26,45 @@ Devin is an AI-powered command-line assistant that helps you understand code, ge
 
 ### Devin CLI Modes
 
-Devin CLI has **5 built-in permission modes** and **3 agent-modes** that control how Devin interacts with your system:
+Devin has **5 built-in permission modes** and **3 agent-modes** that control how Devin interacts with your system. You can select these modes through two different interfaces:
+
+#### CLI Interface (Command Line)
+
+When using Devin via command line, you can access the mode selection menu by typing `/mode` or use direct commands:
+
+**Interactive Mode Selection:**
+```
+/mode
+```
+This will show an interactive menu with 6 options:
+1. **Normal**: Universal agent
+2. **Accept Edits**: Auto-approve edits in workspace
+3. **Smart**: Auto-approve actions the model judges safe
+4. **Ask**: Answer questions (read-only)
+5. **Plan**: Planning only
+6. **Bypass**: Auto-approve all
+
+**Direct Commands:**
+- `/normal` or `/mode normal`
+- `/accept-edits` or `/mode accept-edits`
+- `/smart` or `/mode smart`
+- `/ask` or `/mode ask`
+- `/plan` or `/mode plan`
+- `/bypass` or `/mode bypass`
+
+#### IDE Interface (Devin Desktop / VS Code Extension)
+
+When using Devin through the IDE interface, you can select modes through a visual menu with these options:
+
+- **Code**: Write and edit code
+- **Smart**: Auto-approve actions the model judges safe
+- **Ask**: Answer questions without code changes
+- **Plan**: Plan changes before implementing
+- **Bypass Permissions**: Auto-approve all tool calls
+
+Both interfaces provide the same core functionality but with different user experiences - CLI for command-line users and IDE for those who prefer visual interfaces.
+
+#### Permission Modes
 
 #### Permission Modes
 
